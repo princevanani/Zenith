@@ -1,0 +1,52 @@
+<!-- Mimics a form using every non-text field type: radios, checkboxes, native select, file uploads -->
+<form id="allTypesForm">
+  <fieldset>
+    <legend>Gender</legend>
+    <label><input type="radio" name="gender" id="g1" value="M"> Male</label>
+    <label><input type="radio" name="gender" id="g2" value="F"> Female</label>
+    <label><input type="radio" name="gender" id="g3" value="O"> Other</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Category</legend>
+    <label><input type="radio" name="cat" id="c1" value="GEN"> General</label>
+    <label><input type="radio" name="cat" id="c2" value="OBC"> OBC</label>
+    <label><input type="radio" name="cat" id="c3" value="SC"> SC</label>
+    <label><input type="radio" name="cat" id="c4" value="ST"> ST</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Subjects interested in</legend>
+    <label><input type="checkbox" name="subjects" id="s1" value="Math"> Mathematics</label>
+    <label><input type="checkbox" name="subjects" id="s2" value="Sci"> Science</label>
+    <label><input type="checkbox" name="subjects" id="s3" value="Art"> Arts</label>
+  </fieldset>
+
+  <div>
+    <label for="declare">I hereby declare that the above information is true</label>
+    <input type="checkbox" id="declare" name="declaration">
+  </div>
+
+  <div>
+    <label for="stateSelect">State</label>
+    <select id="stateSelect" name="stateSelect">
+      <option value="">Select</option>
+      <option value="GJ">Gujarat</option>
+      <option value="MH">Maharashtra</option>
+      <option value="RJ">Rajasthan</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="photoUpload">Upload Photograph</label>
+    <input type="file" id="photoUpload" name="photoUpload" accept="image/*">
+  </div>
+  <div>
+    <label for="sigUpload">Upload Signature</label>
+    <input type="file" id="sigUpload" name="sigUpload" accept="image/*">
+  </div>
+  <div>
+    <label for="casteUpload">Caste Certificate</label>
+    <input type="file" id="casteUpload" name="casteUpload">
+  </div>
+</form>
