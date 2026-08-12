@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Zenith</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1f2430;
+      background: #fbfbfd;
+      line-height: 1.7;
+    }
+
+    .topbar {
+      border-bottom: 1px solid #e6e8ee;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar .logo {
+      font-size: 18px;
+    }
+
+    .topbar .name {
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0 0 4px;
+    }
+
+    .updated {
+      color: #6b7280;
+      font-size: 13px;
+      margin: 0 0 32px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 36px 0 10px;
+      color: #111827;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin: 20px 0 6px;
+      color: #111827;
+    }
+
+    p,
+    li {
+      font-size: 14.5px;
+      color: #374151;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .callout {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      color: #1e3a8a;
+      margin: 18px 0;
+    }
+
+    .warn {
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      color: #78350f;
+      margin: 18px 0;
+    }
+
+    code {
+      background: #f1f2f6;
+      padding: 1px 6px;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 13.5px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid #e6e8ee;
+    }
+
+    th {
+      color: #6b7280;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid #e6e8ee;
+      padding: 24px;
+      text-align: center;
+      font-size: 12.5px;
+      color: #9ca3af;
+    }
+
+    footer a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .placeholder {
+      color: #b45309;
+      background: #fffbeb;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <span class="logo">⚡</span>
+    <span class="name">Zenith</span>
+  </div>
+
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: <span class="placeholder">August 13, 2026</span></p>
+
+    <p>Zenith is a browser extension that helps you fill out
+      scholarship, admission, and government-exam forms by remembering information you type
+      and reusing it on future forms. This policy explains what Zenith does with your
+      information — and just as importantly, what it doesn't do.</p>
+
+    <div class="callout">
+      <strong>The short version:</strong> everything Zenith learns about you is stored only
+      on your own device, inside your browser. Zenith has no server, sends nothing over the
+      network, and does not share, sell, or transmit your data to us or to anyone else.
+    </div>
+
+    <h2>1. What information Zenith collects</h2>
+    <p>Zenith stores information locally, on your device, in two ways:</p>
+    <h3>a. Form field values you type</h3>
+    <p>When you fill out a form on any website with autofill/auto-save turned on, Zenith
+      saves the value you entered together with the field's label (e.g. "Father's Name",
+      "Annual Family Income"), so it can offer the same value on a future form. This can
+      include:</p>
+    <ul>
+      <li>Personal details (name, date of birth, gender, email, phone, address)</li>
+      <li>Category/caste, religion, nationality</li>
+      <li>Identity numbers (Aadhaar, PAN) — see the note on sensitive data below</li>
+      <li>Financial details (annual income, bank account number, IFSC code)</li>
+      <li>Education details (board, marks, college/university name, roll number)</li>
+      <li>Any other field label/value you type into a form that Zenith doesn't already
+        recognize (saved as a "custom field" under the label the site used)</li>
+    </ul>
+    <h3>b. Documents you upload</h3>
+    <p>If you choose to, you can upload a photograph, signature, or certificate once in
+      Zenith's options page, so it can be attached to file-upload fields on forms
+      automatically. These files are stored locally on your device.</p>
+
+    <h2>2. How your information is stored</h2>
+    <table>
+      <tr>
+        <th>Where</th>
+        <td><code>chrome.storage.local</code> — a storage area private to
+          this extension, on your device only</td>
+      </tr>
+      <tr>
+        <th>Synced to your Google account?</th>
+        <td>No. Zenith deliberately avoids
+          <code>chrome.storage.sync</code> so sensitive information is never uploaded to a
+          Google account or any cloud service.
+        </td>
+      </tr>
+      <tr>
+        <th>Sent to a server?</th>
+        <td>No. Zenith has no backend. Nothing is ever
+          transmitted off your device by this extension.</td>
+      </tr>
+      <tr>
+        <th>Shared with third parties?</th>
+        <td>No. We don't sell, rent, or share your
+          data — there's no one to share it with, since it never leaves your device.</td>
+      </tr>
+    </table>
+
+    <h2>3. Permissions Zenith uses, and why</h2>
+    <table>
+      <tr>
+        <th>Permission</th>
+        <th>What it's for</th>
+      </tr>
+      <tr>
+        <td><code>storage</code> / <code>unlimitedStorage</code></td>
+        <td>Saving your profile and uploaded documents on your device. Documents like
+          scanned certificates can be a few MB, which is why the higher storage limit is
+          requested — it does not grant network access.</td>
+      </tr>
+      <tr>
+        <td><code>activeTab</code> / <code>scripting</code></td>
+        <td>Running the autofill action on the page you're currently viewing, when you
+          ask it to.</td>
+      </tr>
+      <tr>
+        <td>Host permissions (all sites)</td>
+        <td>Zenith's whole purpose is recognizing and filling form fields on <em>any</em>
+          site — government portals, scholarship platforms, and college admission systems
+          are hosted on many different domains, so the extension needs to be able to run on
+          any page you choose to use it on. It only reads form field labels/values on the
+          page — it does not read your browsing history, other page content, or anything
+          outside of form fields.</td>
+      </tr>
+      <tr>
+        <td><code>contextMenus</code></td>
+        <td>Adds an optional "Autofill this form" right-click menu item.</td>
+      </tr>
+    </table>
+
+    <h2>4. Sensitive information</h2>
+    <p>Aadhaar number, PAN number, bank account details, and uploaded ID documents are
+      treated as sensitive within Zenith:</p>
+    <ul>
+      <li>Autofilling any of these fields requires your explicit confirmation each time,
+        even if autofill is otherwise one click.</li>
+      <li>They are excluded from the "export my data" feature by default — you must
+        opt in to include them in an export file.</li>
+      <li>They are stored the same as everything else: locally, unencrypted at rest in
+        this version. <span class="placeholder"></span></li>
+    </ul>
+    <div class="warn">
+      Because Zenith stores this information only on your own device and only for your
+      own convenience, you remain in control of it at all times — you can view, edit,
+      export, or permanently delete it from the options page whenever you like.
+    </div>
+
+    <h2>5. What Zenith does not do</h2>
+    <ul>
+      <li>No advertising or ad tracking</li>
+      <li>No analytics or usage tracking of any kind</li>
+      <li>No sale or sharing of your data with any third party</li>
+      <li>No access to your browsing history</li>
+      <li>No reading of page content outside recognizable form fields</li>
+    </ul>
+
+    <h2>6. Your choices and controls</h2>
+    <p>From Zenith's options page, at any time, you can:</p>
+    <ul>
+      <li>View and edit every saved field, organized by category</li>
+      <li>Rename or delete any auto-learned custom field</li>
+      <li>Add, replace, or remove any uploaded document</li>
+      <li>Turn off auto-save/learning entirely</li>
+      <li>Export your data as a JSON file (for your own backup)</li>
+      <li>Permanently clear all saved data with one click</li>
+    </ul>
+
+    <h2>7. Data retention and uninstalling</h2>
+    <p>Your data stays on your device for as long as Zenith is installed. If you uninstall
+      the extension, Chrome removes its local storage, including everything Zenith saved,
+      following standard browser behavior for extension data.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>Zenith is a general-purpose productivity tool and is not directed at young
+      children. Many of its intended use cases (scholarship and college-admission forms)
+      are commonly used by users under 18. If you are under 18, we recommend using Zenith
+      with the awareness of a parent or guardian, particularly when saving identity
+      documents such as Aadhaar. Zenith does not knowingly collect information from
+      children in a way that leaves their device, because it does not collect information
+      that leaves any device — see Section 2.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, we'll update the "last updated" date above and, for
+      material changes, note it in the extension's release notes. Continuing to use Zenith
+      after a change means you accept the revised policy.</p>
+
+    <h2>10. Contact us</h2>
+    <p>Questions about this policy or your data can be sent to
+      <span class="placeholder">support@decodebits.com</span>.
+    </p>
+  </div>
+
+  <footer>
+    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    <a href="support.html">Support</a>
+    <div style="margin-top:8px;">© <span class="placeholder">2026</span> <span class="placeholder">Prince Vanani, DecodeBits</span></div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Zenith — Smart Form Filler That Learns As You Type",
+  "version": "1.1.5",
+  "description": "Autofill any form, any site — zero setup. Learns fields as you type. Built for Bank forms and sensitive data too.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options/options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "unlimitedStorage", "activeTab", "scripting", "contextMenus", "windows"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/canonical-fields.js", "src/field-matcher.js", "src/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["privacy-policy.html", "terms-and-conditions.html", "support.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
